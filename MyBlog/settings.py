@@ -109,20 +109,6 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django',
-#         'NAME': 'Demo',
-#         'CLIENT': {
-#             'host':'mongodb+srv://sabbir:bots@cluster01.inqj3.mongodb.net/myblogs'
-#         },   
-#     }
-# }
-
-
-
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
