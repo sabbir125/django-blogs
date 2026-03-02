@@ -1,14 +1,11 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+
 from myApp import views
 
-from rest_framework_simplejwt.views import (
-    TokenObtainPairView,
-)
+router = DefaultRouter()
+router.register(r'blogs', views.BlogViewSet, basename='blog')
 
 urlpatterns = [
-    path('post/blog',views.post_blogView),
-    path('get/blogs',views.get_all_blogView),
-    path('get/blogs/<int:pk>',views.get_all_blogView),
-    path('update/blogs/<int:pk>',views.update_blogView),
-    path('delete/blogs/<int:pk>',views.delete_blogView),
+    path('', include(router.urls)),
 ]

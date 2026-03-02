@@ -1,10 +1,8 @@
 from django.contrib import admin
-from .models import My_blogs
+from .models import Blog
 
 
-# Register your models here.
-@admin.register(My_blogs)
+# Register the refactored blog model.
+@admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ["title",
-                    "text",
-                    "code"]
+    list_display = ["title", "text", "code"]

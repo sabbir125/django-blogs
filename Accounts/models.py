@@ -9,10 +9,8 @@ from .managers import *
 
 
 # Create your models here.
-
-
 #Custom authentication model
-class CustomNewUser(AbstractBaseUser,PermissionsMixin):
+class CustomNewUser(AbstractBaseUser, PermissionsMixin):
     # print("custome user")
     email = models.EmailField(_("email"),unique=True)
     username = models.CharField(_("username"), max_length=10, unique=True)

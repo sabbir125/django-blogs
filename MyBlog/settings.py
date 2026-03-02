@@ -102,16 +102,16 @@ WSGI_APPLICATION = 'MyBlog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'djongo',
+#         'ENGINE': 'django',
 #         'NAME': 'Demo',
 #         'CLIENT': {
 #             'host':'mongodb+srv://sabbir:bots@cluster01.inqj3.mongodb.net/myblogs'
@@ -169,9 +169,9 @@ STATIC_URL = '/static/'
 
 #Added manually
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static"
-]
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static"
+# ]
 
 
 
