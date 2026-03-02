@@ -28,7 +28,7 @@ applied:
 3. **Serializer cleanup**: aligned names and removed unused imports.
 4. **URL configuration**: switched to a router-based approach to simplify
    routing and improve REST compliance.
-5. **Accounts improvements**: added permission checks, fixed misspellings, and
+5. **accounts improvements**: added permission checks, fixed misspellings, and
    cleaned imports.
 6. **PEP8 and style fixes**: removed unused imports, added docstrings, and
    streamlined code readability.
@@ -76,8 +76,8 @@ There are no tests included in the repository—feel free to add your own as nee
    ```
 
 4. **Configure settings**:
-   - Ensure `AUTH_USER_MODEL = 'Accounts.CustomNewUser'` is set in
-     `MyBlog/settings.py`.
+   - Ensure `AUTH_USER_MODEL = 'accounts.CustomNewUser'` is set in
+     `myBlog/settings.py`.
    - Update database settings if not using SQLite.
 
 5. **Run migrations and create superuser**:

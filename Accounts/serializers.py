@@ -11,7 +11,7 @@ User  = get_user_model()
 
 
 class UserSerializer(serializers.ModelSerializer):
-    """Serializer for the custom user model used by the `Accounts` app."""
+    """Serializer for the custom user model used by the `accounts` app."""
 
     class Meta:
         model = User

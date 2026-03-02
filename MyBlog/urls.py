@@ -1,4 +1,4 @@
-"""MyBlog URL Configuration
+"""myBlog URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -30,7 +30,7 @@ urlpatterns = [
     path('login/',TokenObtainPairView.as_view()),
     path('token/refresh/',TokenRefreshView.as_view()),
     path('', include('myApp.urls')),
-    path('', include('Accounts.urls')),
+    path('', include('accounts.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
